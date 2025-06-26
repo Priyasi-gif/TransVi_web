@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TransVi</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        .container { max-width: 600px; margin: auto; }
+        textarea { width: 100%; height: 150px; }
+        .btn { padding: 10px 20px; background: #28a745; color: white; border: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>TransVi</h2>
+        <form method="POST" action="/predict">
+            <label>Enter Sequence:</label><br>
+            <textarea name="sequence">input_sequence </textarea><br><br>
+            <input type="submit" class="btn" value="Identify Virus">
+        </form>
+            <h3>Predicted Virus:</h3>
+    </div>
+</body>
+</html>
